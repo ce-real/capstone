@@ -1,0 +1,98 @@
+html{
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  height: 4rem;
+  width: 100%;
+  position: fixed;
+  background-color: white;
+}
+
+header{
+  background-image: url("../resources/images/banner.jpg");
+  background-size: cover;
+}
+
+.learn{
+  display: flex;
+  background-color: lightgray;
+}
+
+.learn h1{
+  margin-top: 2rem;
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+}
+
+.learn h2{
+  margin-bottom: 1.5rem;
+}
+
+.button{
+  background-color: gray;
+  width: auto;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+}
+
+.button h3{
+  color: white;
+  font-weight: bold;
+}
+
+.orientation, .campus, .guest{
+  margin: 1rem;
+}
+
+.orientation h1, .orientation h2, .orientation p, .campus h1, .campus h2, .campus p, .guest h1, .guest h2, .guest p{
+  margin-left: 1rem;
+}
+
+.orientation p, .campus p{
+  margin-bottom: 4rem;
+}
+
+.guest p{
+  margin-bottom: 2rem;
+}
+
+.classes{
+  margin-bottom: 2rem;
+}
+
+.classes h1{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.but{
+  width: auto;
+  margin: 1rem 0.5rem;
+  background-color: lightgray;
+}
+
+.but h2{
+  margin: 1rem 1rem 1.5rem auto;
+}
+
+.thesis h1{
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+video{
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+footer{
+  margin: 1rem;
+}
