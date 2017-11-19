@@ -8,7 +8,6 @@ html{
 
 nav{
   display: flex;
-  justify-content: space-around;
   height: 4rem;
   width: 100%;
   position: fixed;
@@ -19,18 +18,19 @@ nav{
 nav img{
   height: 2rem;
   width: auto;
+  position: fixed;
 }
 
 header{
-  background-image: url("../resources/images/banner.jpg");
-  background-size: cover;
   display: flex;
   justify-content: space-around;
 }
 
 .learn{
   display: flex;
+  flex-direction: column;
   background-color: lightgray;
+  text-align: center;
 }
 
 .learn h1{
@@ -41,6 +41,11 @@ header{
 
 .learn h2{
   margin-bottom: 1.5rem;
+}
+
+.learn img, .orientation img, #campus img, .guest img{
+  width: 100%;
+  height: auto;
 }
 
 .button{
@@ -54,6 +59,7 @@ header{
 .button h3{
   color: white;
   font-weight: bold;
+  text-align: center;
 }
 
 .orientation, .campus, .guest{
@@ -92,6 +98,7 @@ header{
 
 .but h2{
   margin: 1rem 1rem 1.5rem auto;
+  text-align: center;
 }
 
 .thesis h1{
