@@ -10,6 +10,14 @@ html{
   display: none;
 }
 
+#desktop-classes{
+  display: none;
+}
+
+#desktop-thesis{
+  display: none;
+}
+
 nav{
   display: flex;
   height: 4rem;
@@ -135,7 +143,16 @@ footer{
   #mobile-nav{
     display: none;
   }
+  #mobile-buttons{
+    display: none;
+  }
   #desktop-nav{
+    display: flex;
+  }
+  #desktop-classes{
+    display: flex;
+  }
+  #desktop-thesis{
     display: flex;
   }
   .article{
