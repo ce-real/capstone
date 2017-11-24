@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Colmar Academy</title>
     <link href="./resources/css/style.css" type="text/css" rel="stylesheet" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
   </head>
   <body>
     <header>
@@ -19,17 +20,15 @@
           <a href="#login"><img src="./resources/images/ic-login.svg"
               alt="A person icon." /></a>
         </div>
-        <div id="desktop-nav">
-          <div class="left">
-            <a href="#home"><img src="./resources/images/ic-logo.svg"
-              alt="Colmar Academy's lion logo." /><h4>Colmar</h4><p>Academy</p></a>
+        <div id="desktop-nav" class="left">
+           <a href="#home"><img src="./resources/images/ic-logo.svg"
+              alt="Colmar Academy's lion logo." /><span><strong>Colmar</strong>Academy</span></a>
           </div>
-          <div class="right">
+        <div id="desktop-nav" class="right">
             <a href="#campus">On campus</a>
             <a href="#classes">Online</a>
             <a href="#companies">For companies</a>
             <a href="#login">Sign in</a>
-          </div>
         </div>
       </nav>
     </header>
@@ -39,10 +38,9 @@
       <div id="learnbox">
         <h1>Learn something new every day</h1>
         <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-      </div>
-    </div>
-      <div class="button">
-        <h3>Start here</h3>
+        <div id="login" class="button">
+          <h3>Start here</h3>
+        </div>
       </div>
     </div>
     <div class="main">
@@ -53,7 +51,7 @@
         <p>"Curabitur vitae libero in ipsum porttitor consequat.  Aliquam et commono lectus, nec consequat neque.  Sed non accumsan uma.  Phasellus sed consequat ex.  Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
         <h5>Emanuel, Sr. Strategist at Hiring.com</h5>
       </div>
-      <div class="aside">
+      <div id="mobile-info">
         <div class="orientation">
           <img src="./resources/images/information-orientation-mobile.jpg"
                alt="An overhead view of students with long shadows." />
@@ -75,28 +73,51 @@
           <h3>Join a keynote with Oliver Sacks about music in medical treatment</h3>
           <p>Read more</p>
         </div>
+      <div class="desktop-aside">
+        <div class="orientation">
+          <img src="./resources/images/information-orientation.jpg"
+               alt="An overhead view of students with long shadows." />
+          <h2>Orientation date</h2>
+          <h3>Tue 10/11 &amp; Wed 10/12: 8am-3pm</h3>
+          <p>Read more</p>
+        </div>
+        <div id="campus">
+          <img src="./resources/images/information-campus.jpg"
+               alt="A view of students studying." />
+          <h2>Our campus</h2>
+          <h3>Find which campus is close by you</h3>
+          <p>Read more</p>
+        </div>
+        <div class="guest">
+          <img src="./resources/images/information-guest-lecture.jpg"
+               alt="A picture of Oliver Sacks." />
+          <h2>Special guest lecture</h2>
+          <h3>Join a keynote with Oliver Sacks about music in medical treatment</h3>
+          <p>Read more</p>
+        </div>
       </div>
-   </aside>
+    </div>
+   </div>
      <div id="classes">
        <h1>Start learning</h1>
        <div id="mobile-buttons">
          <div class="but">
-           <h2>Software engineering</h2>
+           <h3>Software engineering</h3>
          </div>
          <div class="but">
-           <h2>Computer art</h2>
+           <h3>Computer art</h3>
          </div>
          <div class="but">
-           <h2>Design</h2>
+           <h3>Design</h3>
          </div>
          <div class="but">
-           <h2>Data</h2>
+           <h3>Data</h3>
          </div>
          <div class="but">
-           <h2>Business</h2>
+           <h3>Business</h3>
          </div>
          <div class="but">
-           <h2>Marketing</h2>
+           <h3>Marketing</h3>
          </div>
        </div>
        <div id="desktop-classes">
@@ -145,11 +166,17 @@
      </div>
    <div class="thesis">
      <h1>Thesis exhibits</h1>
-     <video width="320" height="240" controls>
-       <source src="./resources/videos/thesis.mp4" type="video/mp4">
-       Your browser does not support the video.
-     </video>
+     <div id="mobile-thesis">
+       <video width="320" height="240" controls>
+         <source src="./resources/videos/thesis.mp4" type="video/mp4">
+         Your browser does not support the video.
+       </video>
+     </div>
      <div id="desktop-thesis">
+       <video width="320" height="240" controls>
+         <source src="./resources/videos/thesis.mp4" type="video/mp4">
+         Your browser does not support the video.
+       </video>
        <h2>Reimagine urban</h2>
        <p>"Curabitur vitae libero in ipsum porttitor consequat.  Aliquam et commondo lectus, nec consequat neque.  Sed non accumsan uma.  Phasellus sed consequat ex.  Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
        <div id="thesis-aside">
@@ -168,7 +195,13 @@
        </div>
    </div>
    <footer>
-     <p>&copy;2017 Colmar Academy.  All rights reserved.</p>
+     <div id="mobile-foot">
+       <p>&copy;2017 Colmar Academy.  All rights reserved.</p>
+     </div>
+     <div id="desktop-foot">
+       <p>&copy;2017 Colmar Academy.  All rights reserved.</p>
+       <p>Terms   Privacy</p>
+     </div>
    </footer>
   </body>
 </html>

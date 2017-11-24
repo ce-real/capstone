@@ -6,18 +6,6 @@ html{
   font-family: Arial;
 }
 
-.article{
-  display: none;
-}
-
-#desktop-classes{
-  display: none;
-}
-
-#desktop-thesis{
-  display: none;
-}
-
 nav{
   display: flex;
   height: 4rem;
@@ -25,14 +13,8 @@ nav{
   background-color: white;
   z-index: 5;
   flex-direction: row;
-}
-
-#mobile-nav .left{
-  align-items: flex-start;
-}
-
-#mobile-nav .right{
-  align-items: flex-end;
+  align-items: center;
+  justify-content: space-between;
 }
 
 nav img{
@@ -44,11 +26,17 @@ header{
   display: flex;
   width: 100%;
   position: fixed;
+  top: -0.05rem;
+  flex: 10 10 auto;
+  justify-content: space-between;
+  z-index: 5;
+  flex-direction: row;
 }
 
 .learn{
   display: flex;
   background-color: lightgray;
+  flex-direction: column;
 }
 
 #learnbox{
@@ -58,32 +46,40 @@ header{
 }
 
 #learnbox h1{
-  margin-top: 2rem;
+  margin-top: -2rem;
   margin-left: 1rem;
   margin-bottom: 2rem;
+  padding-top: 4rem;
 }
 
 #learnbox h2{
   margin-bottom: 1.5rem;
 }
 
-.learn img, .orientation img, #campus img, .guest img{
+.orientation img, #campus img, .guest img{
   width: 100%;
   height: auto;
 }
 
-.button{
-  background-color: gray;
-  width: auto;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  margin-bottom: 2rem;
+.learn img{
+  padding-top: 4rem;
+  width: 100%;
+  height: 75%;
+  display: block;
 }
 
-.button h3{
-  color: white;
-  font-weight: bold;
-  text-align: center;
+.thesis h1{
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+video{
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+footer{
+  margin: 1rem;
 }
 
 .orientation, .campus, .guest{
@@ -95,6 +91,7 @@ header{
 }
 
 .orientation p, .campus p{
+  margin-left: 1rem;
   margin-bottom: 4rem;
 }
 
@@ -114,43 +111,83 @@ header{
   margin-bottom: 0.5rem;
 }
 
+/* Mobile version */
+
+@media only screen and (max-width: 768px){
+.article{
+  display: none;
+}
+
+#desktop-classes, #desktop-thesis, #desktop-aside, #desktop-classes, #desktop-nav, #desktop-foot{
+  display: none;
+}
+
+#mobile-nav .left{
+  align-items: flex-start;
+}
+
+#mobile-nav .right{
+  align-items: flex-end;
+}
+
+
+#login .button{
+  background-color: gray;
+  width: auto;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+}
+
+#login .button h3{
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
 .but{
   width: auto;
   margin: 1rem 0.5rem;
   background-color: lightgray;
 }
 
-.but h2{
+.but h3{
   margin: 1rem 1rem 1.5rem auto;
   text-align: center;
+  padding: 1rem 1rem 1.5rem 1rem;
+}
 }
 
-.thesis h1{
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-}
-
-video{
-  margin-bottom: 2rem;
-  width: 100%;
-}
-
-footer{
-  margin: 1rem;
-}
+/* Tablet and desktop version */
 
 @media only screen and (min-width: 768px){
-  #mobile-nav{
+  nav{
+    display: flex;
+    height: 4rem;
+    width: 100%;
+    background-color: white;
+    z-index: 5;
+    flex-direction: row;
+  }
+  #mobile-nav, #mobile-buttons, #mobile-info, #mobile-thesis, #mobile-foot{
     display: none;
   }
-  #mobile-buttons{
-    display: none;
+  #desktop-foot{
+    display: inline-flex;
   }
   #desktop-nav{
     display: flex;
   }
+  #desktop-nav .right{
+    justify-content: flex-end;
+  }
+  #desktop-thesis .left{
+    justify-content: flex-start;
+  }
   #desktop-classes{
-    display: flex;
+    display: inline-flex;
+    flex-flow: row wrap;
+    margin: 2rem 4.5rem;
   }
   #desktop-thesis{
     display: flex;
@@ -163,15 +200,64 @@ footer{
   }
   .learn img{
     width: 60%;
-    height: auto;
+    height: 40%;
+    padding-top: 4rem;
+    margin-bottom: 2rem;
   }
   #learnbox{
     display: block;
+    width: 100%;
+  }
+  #learnbox h1{
+    margin-top: 4rem;
   }
   #desktop-nav .left{
     align-items: flex-start;
   }
+  #desktop-nav .left a span{
+    text-transform: uppercase;
+  }
   #desktop-nav .right{
     align-items: flex-end;
+  }
+  h1{
+    margin: 0px auto;
+  }
+  #classes{
+    background-color: lightgray;
+  }
+  .container{
+    margin: 2rem;
+    background-color: white;
+  }
+  .container h4{
+    text-transform: uppercase;
+    font-weight: normal;
+    margin: .5rem 1rem;
+  }
+  .container h2, .container p{
+    margin-left: 1rem;
+  }
+  .container img{
+    width: 100%;
+    height: auto;
+  }
+  .main{
+    width: 100%;
+  }
+  .article{
+    flex-flow: column wrap;
+    width: 60%;
+    height: auto;
+  }
+  .desktop-aside{
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+  }
+  .desktop-aside img{
+    width: 35%;
+    height: auto;
+    margin: 1rem;
   }
 }
