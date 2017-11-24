@@ -68,7 +68,7 @@ header{
   display: block;
 }
 
-.thesis h1{
+#thesis h1{
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
@@ -118,7 +118,7 @@ footer{
   display: none;
 }
 
-#desktop-classes, #desktop-thesis, #desktop-aside, #desktop-classes, #desktop-nav, #desktop-foot{
+#desktop-classes, .desktop-thesis, #desktop-aside, #desktop-classes, .desktop-nav, #desktop-foot{
   display: none;
 }
 
@@ -175,13 +175,13 @@ footer{
   #desktop-foot{
     display: inline-flex;
   }
-  #desktop-nav{
+  .desktop-nav{
     display: flex;
   }
-  #desktop-nav .right{
+  .desktop-nav #right{
     justify-content: flex-end;
   }
-  #desktop-thesis .left{
+  .desktop-nav #left{
     justify-content: flex-start;
   }
   #desktop-classes{
@@ -189,8 +189,9 @@ footer{
     flex-flow: row wrap;
     margin: 2rem 4.5rem;
   }
-  #desktop-thesis{
+  .desktop-thesis{
     display: flex;
+    flex-direction: column;
   }
   .article{
     display: flex;
@@ -211,14 +212,16 @@ footer{
   #learnbox h1{
     margin-top: 4rem;
   }
-  #desktop-nav .left{
+  .desktop-nav #left{
     align-items: flex-start;
+    justify-content: center;
   }
-  #desktop-nav .left a span{
+  .desktop-nav #left a span{
     text-transform: uppercase;
   }
-  #desktop-nav .right{
+  .desktop-nav #right{
     align-items: flex-end;
+    justify-content: center;
   }
   h1{
     margin: 0px auto;
@@ -227,15 +230,17 @@ footer{
     background-color: lightgray;
   }
   .container{
-    margin: 2rem;
+    margin: 1rem;
     background-color: white;
+    width: 16rem;
+    height: 18rem;
   }
   .container h4{
     text-transform: uppercase;
     font-weight: normal;
     margin: .5rem 1rem;
   }
-  .container h2, .container p{
+  .container h3, .container p{
     margin-left: 1rem;
   }
   .container img{
@@ -250,6 +255,9 @@ footer{
     width: 60%;
     height: auto;
   }
+  .article img{
+    height: 60%;
+  }
   .desktop-aside{
     display: flex;
     width: 40%;
@@ -259,5 +267,19 @@ footer{
     width: 35%;
     height: auto;
     margin: 1rem;
+  }
+  #thesis{
+    display: flex;
+    flex-direction: row;
+  }
+  .desktop-thesis{
+    width: 60%;
+  }
+  .thesis-aside{
+    width: 40%;
+  }
+  #desktop-foot{
+    display: flex;
+    justify-content: space-between;
   }
 }
