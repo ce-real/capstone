@@ -32,7 +32,9 @@ header{
   z-index: 5;
   flex-direction: row;
 }
-
+h1{
+  margin: 0px auto;
+}
 .learn{
   display: flex;
   background-color: lightgray;
@@ -114,11 +116,7 @@ footer{
 /* Mobile version */
 
 @media only screen and (max-width: 768px){
-.article{
-  display: none;
-}
-
-#desktop-classes, .desktop-thesis, .desktop-aside, #desktop-classes, .desktop-nav, #desktop-foot{
+.main-left, .desktop-aside, #desktop-classes, .desktop-thesis, #desktop-classes, .desktop-nav, #desktop-foot{
   display: none;
 }
 
@@ -194,7 +192,6 @@ footer{
   }
   .desktop-thesis{
     display: flex;
-    flex-direction: column;
   }
   .article{
     display: flex;
@@ -225,9 +222,6 @@ footer{
   .desktop-nav #right{
     align-items: flex-end;
     justify-content: center;
-  }
-  h1{
-    margin: 0px auto;
   }
   #classes{
     background-color: lightgray;
@@ -270,9 +264,6 @@ footer{
   .desktop-aside{
     display: flex;
     flex-direction: column;
-  }
-  .desktop-thesis{
-    display: flex;
   }
   .thesis-left{
     width: 60%;
