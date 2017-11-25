@@ -130,6 +130,9 @@ footer{
   align-items: flex-end;
 }
 
+#mobile-info{
+  display: flex;
+}
 
 #login .button{
   background-color: gray;
@@ -251,32 +254,40 @@ footer{
     width: 100%;
   }
   .article{
-    flex-flow: column wrap;
+    flex-flow: row wrap;
+  }
+  .main-left{
     width: 60%;
     height: auto;
   }
-  .article img{
-    height: 60%;
+  .main-left img{
+    width: 100%;
+  }
+  .main-right{
+    width: 40%;
+    height: auto;
   }
   .desktop-aside{
     display: flex;
-    width: 40%;
     flex-direction: column;
   }
-  .desktop-aside img{
-    width: 35%;
-    height: auto;
-    margin: 1rem;
-  }
-  #thesis{
-    display: flex;
-    flex-direction: row;
-  }
   .desktop-thesis{
+    display: flex;
+  }
+  .thesis-left{
     width: 60%;
   }
-  .thesis-aside{
+  .thesis-left img{
+    width: 60%;
+    margin: 1rem auto;
+  }
+  .thesis-right{
     width: 40%;
+  }
+  .thesis-box img{
+    width: 14%;
+    height: auto;
+    margin: 1rem;
   }
   #desktop-foot{
     display: flex;
