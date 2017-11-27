@@ -2,10 +2,76 @@ html{
   font-size: 16px;
 }
 
-*{
-  font-family: Arial;
+/* latin */
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Crimson Text Regular'), local('CrimsonText-Regular'), url(https://fonts.gstatic.com/s/crimsontext/v8/3IFMwfRa07i-auYR-B-zNRampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
-
+/* latin */
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Crimson Text Bold'), local('CrimsonText-Bold'), url(https://fonts.gstatic.com/s/crimsontext/v8/rEy5tGc5HdXy56Xvd4f3I8hHwsiXhsDb0smKjAA7Bek.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Faustina';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Faustina Regular'), local('Faustina-Regular'), url(https://fonts.gstatic.com/s/faustina/v2/Smm27jtSsrYS2UJN1wzM0RkAz4rYn47Zy2rvigWQf6w.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Faustina';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Faustina Regular'), local('Faustina-Regular'), url(https://fonts.gstatic.com/s/faustina/v2/BEL0cXsTgiEuOwugqgXMR3YhjbSpvc47ee6xR_80Hnw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Fira Sans Regular'), local('FiraSans-Regular'), url(https://fonts.gstatic.com/s/firasans/v8/MIPWVWI_mY_QERxcMVPEwIX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Fira Sans Regular'), local('FiraSans-Regular'), url(https://fonts.gstatic.com/s/firasans/v8/EjsrzDkQUQCDwsBtLpcVQZBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Fira Sans Bold'), local('FiraSans-Bold'), url(https://fonts.gstatic.com/s/firasans/v8/DugPdSljmOTocZOR2CItOojoYw3YTyktCCer_ilOlhE.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Fira Sans Bold'), local('FiraSans-Bold'), url(https://fonts.gstatic.com/s/firasans/v8/DugPdSljmOTocZOR2CItOhampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+p{
+  font-family: 'Faustina', serif;
+}
+h1, h2, h3, h4{
+  font-family: 'Fira Sans', sans-serif;
+}
 nav{
   display: flex;
   height: 4rem;
@@ -34,6 +100,19 @@ header{
 }
 h1{
   margin: 0px auto;
+}
+.button #login{
+  background-color: gray;
+  width: auto;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+}
+
+.button #login h3{
+  color: white;
+  font-weight: bold;
+  text-align: center;
 }
 .learn{
   display: flex;
@@ -120,32 +199,17 @@ footer{
   display: none;
 }
 
-#mobile-nav .left{
-  align-items: flex-start;
-}
-
-#mobile-nav .right{
-  align-items: flex-end;
+#mobile-nav{
+  align-items: space-between;
 }
 
 #mobile-info{
   display: flex;
+  flex-direction: column;
 }
-
-#login .button{
-  background-color: gray;
-  width: auto;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  margin-bottom: 2rem;
+#mobile-info p{
+  color: blue;
 }
-
-#login .button h3{
-  color: white;
-  font-weight: bold;
-  text-align: center;
-}
-
 .but{
   width: auto;
   margin: 1rem 0.5rem;
@@ -173,17 +237,37 @@ footer{
   #mobile-nav, #mobile-buttons, #mobile-info, #mobile-thesis, #mobile-foot{
     display: none;
   }
+  .button #login{
+    background-color: slategray;
+  }
+  .button #login h3{
+    padding: 0.5rem 0.5rem;
+  }
   #desktop-foot{
     display: inline-flex;
   }
   .desktop-nav{
     display: flex;
   }
-  .desktop-nav #right{
+  #right{
     justify-content: flex-end;
+    align-items: center;
   }
-  .desktop-nav #left{
+  #right a{
+    margin: 0rem 1rem;
+  }
+  #left{
     justify-content: flex-start;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: 'Crimson Text', serif;
+  }
+  #left img{
+    position: relative;
+    top: 0.95rem;
+  }
+  #classes{
+    margin-top: 4rem;
   }
   #desktop-classes{
     display: inline-flex;
@@ -264,21 +348,61 @@ footer{
   .desktop-aside{
     display: flex;
     flex-direction: column;
+    }
+  .desktop-aside img, #campus img{
+    width: 70%;
+    height: 70%;
+    margin: 1rem 1rem;
+  }
+  .orientation, #campus, .guest{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid gray;
+    width: 100%;
+    margin: 0px auto;
+  }
+  .guest{
+    background-color: lightgray;
+  }
+  .text{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    margin: 0rem 0rem 0rem -3rem;
+  }
+  .text h2, .text h4, .text p{
+    margin: 0.5rem 0rem;
+  }
+  .text p{
+    color: blue;
+  }
+  #thesis h1{
+    margin: 0px auto;
+  }
+  #thesis p{
+    color: black;
   }
   .thesis-left{
     width: 60%;
   }
-  .thesis-left img{
-    width: 60%;
-    margin: 1rem auto;
-  }
   .thesis-right{
     width: 40%;
+    display: flex;
+    flex-direction: column;
+  }
+  .thesis-box{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0px auto;
+  }
+  .thesis-box #fisma{
+    background-color: lightgray;
   }
   .thesis-box img{
-    width: 14%;
-    height: auto;
-    margin: 1rem;
+    width: 35%;
+    height: 35%;
+    margin: 1rem 1rem;
   }
   #desktop-foot{
     display: flex;
