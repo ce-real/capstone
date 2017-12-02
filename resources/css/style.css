@@ -1,5 +1,6 @@
 html{
   font-size: 16px;
+  color: #000080;
 }
 
 /* latin */
@@ -99,14 +100,19 @@ header{
   flex-direction: row;
 }
 h1{
-  margin: 0px auto;
+  justify-content: center;
 }
 .button #login{
-  background-color: gray;
+  background-color: #FF8B94;
   width: auto;
   margin-left: 1rem;
   margin-right: 1rem;
   margin-bottom: 2rem;
+}
+
+.button #login:hover{
+  background-color: #A7E1FF;
+  transition: 500ms linear 100ms;
 }
 
 .button #login h3{
@@ -116,7 +122,7 @@ h1{
 }
 .learn{
   display: flex;
-  background-color: lightgray;
+  background-color: #A7E1FF;
   flex-direction: column;
 }
 
@@ -200,7 +206,7 @@ footer{
 }
 
 #mobile-nav{
-  align-items: space-between;
+  justify-content: space-between;
 }
 
 #mobile-info{
@@ -213,9 +219,13 @@ footer{
 .but{
   width: auto;
   margin: 1rem 0.5rem;
-  background-color: lightgray;
+  background-color: #FF8B94;
 }
 
+.but:hover{
+  background-color: #A7E1FF;
+  transition: 500ms linear 100ms;
+}
 .but h3{
   margin: 1rem 1rem 1.5rem auto;
   text-align: center;
@@ -238,7 +248,11 @@ footer{
     display: none;
   }
   .button #login{
-    background-color: slategray;
+    background-color: #FF8B94;
+  }
+  .button #login:hover{
+    background-color: #A7E1FF;
+    transition: 500ms linear 100ms;
   }
   .button #login h3{
     padding: 0.5rem 0.5rem;
@@ -308,7 +322,10 @@ footer{
     justify-content: center;
   }
   #classes{
-    background-color: lightgray;
+    background-color: #A7E1FF;
+  }
+  #classes h1{
+    margin: 0px auto;
   }
   .container{
     margin: 1rem;
@@ -357,12 +374,12 @@ footer{
   .orientation, #campus, .guest{
     display: flex;
     flex-direction: row;
-    border: 1px solid gray;
+    border: 1px solid #000080;
     width: 100%;
     margin: 0px auto;
   }
   .guest{
-    background-color: lightgray;
+    background-color: #A7E1FF;
   }
   .text{
     display: flex;
@@ -377,7 +394,7 @@ footer{
     color: blue;
   }
   #thesis h1{
-    margin: 0px auto;
+    justify-content: center;
   }
   #thesis p{
     color: black;
@@ -397,7 +414,7 @@ footer{
     margin: 0px auto;
   }
   .thesis-box #fisma{
-    background-color: lightgray;
+    background-color: #A7E1FF;
   }
   .thesis-box img{
     width: 35%;
