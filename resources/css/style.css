@@ -258,7 +258,7 @@ nav img{
     text-decoration: none;
   }
   .desktop-nav a:hover{
-    text-decoration: underline;
+    color: #A7E1FF;
   }
   .desktop-nav a:active{
     color: #FF8B94;
