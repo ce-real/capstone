@@ -258,8 +258,7 @@ nav img{
     text-decoration: none;
   }
   .desktop-nav a:hover{
-    color: #A7E1FF;
-    transition: 500ms linear 100ms;
+    text-decoration: underline;
   }
   .desktop-nav a:active{
     color: #FF8B94;
