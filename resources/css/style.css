@@ -240,7 +240,7 @@ footer{
 
 /* Tablet and desktop version */
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 760px){
   nav{
     display: flex;
     height: 4rem;
@@ -360,9 +360,6 @@ footer{
     width: 100%;
     height: auto;
   }
-  #main{
-    width: 1024px;
-  }
   .article{
     flex-flow: row wrap;
   }
@@ -395,6 +392,11 @@ footer{
   }
   .guest{
     background-color: #A7E1FF;
+  }
+  #desktop-classes{
+    display: flex;
+    min-width: 760px;
+    max-width: 1024px;
   }
   .text{
     display: flex;
