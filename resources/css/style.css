@@ -251,17 +251,17 @@ nav img{
     z-index: 5;
     flex-direction: row;
   }
-  a:link{
+  .desktop-nav a:link{
     text-decoration: none;
   }
-  a:visited{
+  .desktop-nav a:visited{
     text-decoration: none;
   }
-  a:hover{
+  .desktop-nav a:hover{
     color: #A7E1FF;
     transition: 500ms linear 100ms;
   }
-  a:active{
+  .desktop-nav a:active{
     color: #FF8B94;
   }
   #mobile-nav, #mobile-buttons, #mobile-info, #mobile-thesis, #mobile-foot{
