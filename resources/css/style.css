@@ -73,16 +73,6 @@ p{
 h1, h2, h3, h4{
   font-family: 'Fira Sans', sans-serif;
 }
-nav{
-  display: flex;
-  height: 4rem;
-  width: 100%;
-  background-color: #FF8B94;
-  z-index: 5;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
 
 nav img{
   height: 2rem;
@@ -91,16 +81,15 @@ nav img{
 
 header{
   display: flex;
+  justify-content: space-between;
   width: 100%;
   position: fixed;
   top: -0.05rem;
   flex: 10 10 auto;
-  justify-content: space-between;
   z-index: 5;
-  flex-direction: row;
 }
-h1{
-  justify-content: center;
+#classes h1, #thesis h1{
+  margin: 0px auto;
 }
 .button #login{
   background-color: #FF8B94;
@@ -160,11 +149,6 @@ h1{
   display: block;
 }
 
-#thesis h1{
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-}
-
 video{
   margin-bottom: 2rem;
   width: 100%;
@@ -191,35 +175,51 @@ footer{
   margin-bottom: 2rem;
 }
 
-.classes{
+#classes{
   margin-bottom: 2rem;
 }
 
-.classes h1{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 2rem;
-  margin-bottom: 0.5rem;
+#classes h1, #thesis h1{
+  text-align: center;
 }
 
 /* Mobile version */
 
 @media only screen and (max-width: 768px){
-.main-left, .desktop-aside, #desktop-classes, .desktop-thesis, #desktop-classes, .desktop-nav, #desktop-foot{
+.main-left, .desktop-aside, #desktop-classes, .desktop-thesis, .desktop-nav, #desktop-foot{
   display: none;
 }
 
-#mobile-nav{
-  justify-content: space-between;
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  width: 100%;
+  background-color: #FF8B94;
+  z-index: 5;
 }
 
+nav img{
+  margin: 0rem 1rem;
+}
 #mobile-info{
   display: flex;
   flex-direction: column;
 }
 #mobile-info p{
   color: blue;
+}
+.button #login{
+  background-color: #FF8B94;
+}
+.button #login:hover{
+  background-color: #000080;
+  transition: 500ms linear 100ms;
+}
+.button #login:active{
+  background-color: #A7E1FF;
+  transition: 500ms linear 100ms;
 }
 .but{
   width: auto;
@@ -240,14 +240,29 @@ footer{
 
 /* Tablet and desktop version */
 
-@media only screen and (min-width: 760px){
+@media only screen and (min-width: 768px){
   nav{
     display: flex;
     height: 4rem;
     width: 100%;
+    align-items: center;
+    justify-content: space-between;
     background-color: #FF8B94;
     z-index: 5;
     flex-direction: row;
+  }
+  a:link{
+    text-decoration: none;
+  }
+  a:visited{
+    text-decoration: none;
+  }
+  a:hover{
+    color: #A7E1FF;
+    transition: 500ms linear 100ms;
+  }
+  a:active{
+    color: #FF8B94;
   }
   #mobile-nav, #mobile-buttons, #mobile-info, #mobile-thesis, #mobile-foot{
     display: none;
@@ -255,12 +270,8 @@ footer{
   .button #login{
     background-color: #FF8B94;
   }
-  .button #login:hover{
-    background-color: #000080;
-    transition: 500ms linear 100ms;
-  }
   .button #login:active{
-    background-color: #A7E1FF;
+    background-color: #000080;
     transition: 500ms linear 100ms;
   }
   .button #login h3{
